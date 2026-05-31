@@ -712,10 +712,12 @@ button:active {
 
     body {
         background-color: #FFFFFF !important;
-        color: #1F160F !important;
+        color: #1c1107 !important;
         font-size: 13.5px !important;
         line-height: 1.4 !important;
         padding-top: 0 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
     }
 
     .no-print {
@@ -729,6 +731,8 @@ button:active {
         box-shadow: none !important;
         border: none !important;
         background-color: #FFFFFF !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
     }
 
     .cv-header {
@@ -855,6 +859,8 @@ button:active {
         padding: 10px 12px !important;
         border-radius: 6px !important;
         box-shadow: none !important;
+        break-inside: avoid !important;
+        -webkit-column-break-inside: avoid !important;
     }
 
     .exp-header {
@@ -886,6 +892,8 @@ button:active {
     .skill-card-visual {
         padding: 8px !important;
         border-radius: 6px !important;
+        break-inside: avoid !important;
+        -webkit-column-break-inside: avoid !important;
     }
 
     .skill-icon-wrap {
@@ -911,6 +919,8 @@ button:active {
     .formation-item {
         padding: 8px 10px !important;
         border-radius: 6px !important;
+        break-inside: avoid !important;
+        -webkit-column-break-inside: avoid !important;
     }
 
     .form-title {
