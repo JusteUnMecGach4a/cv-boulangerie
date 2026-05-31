@@ -58,37 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggleBtn.setAttribute('title', "Changer pour l'ambiance Fournil");
     }
 
-    // 2.5 Holiday System (Fête des Mères auto-detection)
-    const HOLIDAYS = [
-        { name: 'mothers-day', month: 4, day: 31, range: 7 }
-    ];
-
-    function getActiveHoliday() {
-        const now = new Date();
-        const currentMonth = now.getMonth();
-        const currentDay = now.getDate();
-
-        for (const holiday of HOLIDAYS) {
-            const holidayDate = new Date(now.getFullYear(), holiday.month, holiday.day);
-            const diffTime = holidayDate - now;
-            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-            if (currentMonth === holiday.month && currentDay === holiday.day) return holiday.name;
-            if (diffDays > 0 && diffDays <= holiday.range) return holiday.name;
-        }
-        return 'neutral';
-    }
-
-    function initHoliday() {
-        const holiday = getActiveHoliday();
-        body.setAttribute('data-holiday', holiday);
-        if (holiday === 'mothers-day') {
-            const banner = document.querySelector('.holiday-banner');
-            if (banner) banner.classList.remove('d-none');
-        }
-    }
-
-    initHoliday();
-
     // 3. Print / PDF Generation System
     printBtn.addEventListener('click', () => {
         // Soft haptic feedback / visual effect on click before opening dialog

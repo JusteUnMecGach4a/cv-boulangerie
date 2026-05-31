@@ -51,56 +51,6 @@
     --border-actionbar: rgba(56, 36, 21, 0.4);
 }
 
-/* ==========================================================================
-   2.2 Fête des Mères Theme Override
-   ========================================================================== */
-body[data-holiday="mothers-day"].light-theme {
-    --bg-page: #FAF0F2;
-    --bg-card: #FFFFFF;
-    --bg-card-hover: #FFFDFE;
-    --bg-badge: #FCE4EC;
-    --text-badge: #C2185B;
-    --text-primary: #3E182B;
-    --text-secondary: #6A364F;
-    --accent-color: #D81B60;
-    --accent-hover: #880E4F;
-    --accent-light: #F8BBD0;
-    --border-color: #ECD2DC;
-    --timeline-line: #ECD2DC;
-    --bg-actionbar: rgba(250, 240, 242, 0.85);
-    --border-actionbar: rgba(236, 210, 220, 0.4);
-}
-
-body[data-holiday="mothers-day"].dark-theme {
-    --bg-page: #1F0E16;
-    --bg-card: #2D1420;
-    --bg-card-hover: #3A1A2A;
-    --bg-badge: #4A152E;
-    --text-badge: #F48FB1;
-    --text-primary: #FCE4EC;
-    --text-secondary: #C8B3BE;
-    --accent-color: #E91E63;
-    --accent-hover: #FF4081;
-    --accent-light: #880E4F;
-    --border-color: #421A2F;
-    --timeline-line: #421A2F;
-    --bg-actionbar: rgba(31, 14, 22, 0.85);
-    --border-actionbar: rgba(66, 26, 47, 0.4);
-}
-
-@keyframes heartBeat {
-    0% { transform: scale(1); }
-    14% { transform: scale(1.12); }
-    28% { transform: scale(1); }
-    42% { transform: scale(1.12); }
-    70% { transform: scale(1); }
-}
-
-.animate-beat {
-    display: inline-block;
-    animation: heartBeat 1.4s infinite ease-in-out;
-}
-
 /* Reset and Base Styles */
 * {
     box-sizing: border-box;
