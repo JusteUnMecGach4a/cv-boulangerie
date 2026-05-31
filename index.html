@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV de Mathéo Canova-Prevot - Futur apprenti Boulanger en CAP. Expériences réussies en cuisine, boucherie et service. Titulaire du BSR.">
+    <title>Mathéo Canova-Prevot - Candidature CAP Boulanger en Alternance</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <!-- Top Interactive Navigation Bar -->
+    <header class="action-bar no-print">
+        <div class="action-container">
+            <div class="logo-text">
+                <span class="emoji-icon">🥖</span>
+                <span class="brand-name">Mathéo Canova-Prevot</span>
+            </div>
+            <div class="action-buttons">
+                <!-- Theme Toggle: Mode Fournil (Bakery oven at night) -->
+                <button id="theme-toggle" class="btn-secondary" title="Changer d'ambiance (Jour / Fournil)">
+                    <svg class="icon" viewBox="0 0 24 24" width="20" height="20">
+                        <!-- Sun Icon (Default) -->
+                        <path class="sun-icon" fill="currentColor" d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5s5-2.24 5-5s-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-12.37c-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.39-.38.39-1.02 0-1.41zm-12.37 12.37c-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.38-.39.38-1.03 0-1.41z"/>
+                        <!-- Flame/Oven Icon (Hidden by default, shown in dark theme) -->
+                        <path class="flame-icon hidden" fill="currentColor" d="M12 2S8.5 7.5 8.5 11c0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5c0-3.5-3.5-9-3.5-9zm-2 15c-3 0-5.5 2.5-5.5 5.5S7 23 10 23h4c3 0 5.5-2.5 5.5-5.5S17 17 14 17h-4z"/>
+                    </svg>
+                    <span class="btn-text">Mode Fournil</span>
+                </button>
+                <!-- Print/PDF Button -->
+                <button id="print-button" class="btn-primary">
+                    <svg class="icon" viewBox="0 0 24 24" width="20" height="20">
+                        <path fill="currentColor" d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1s1 .45 1 1s-.45 1-1 1zm-1-9H6v4h12V3z"/>
+                    </svg>
+                    <span>Imprimer / PDF</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main CV Layout Container -->
+    <div class="cv-page">
+        <!-- HEADER SECTION -->
+        <header class="cv-header">
+            <div class="header-left">
+                <!-- Profile Photo -->
+                <div class="profile-photo-container">
+                    <img src="photo.jpg" alt="Mathéo Canova-Prevot" class="profile-photo">
+                </div>
+                <div class="title-meta">
+                    <h1>Mathéo Canova-Prevot</h1>
+                    <div class="job-title">Futur Apprenti Boulanger</div>
+                    <div class="job-badge">Recherche Alternance CAP • Rentrée 2026 / 2027</div>
+                </div>
+            </div>
+            
+            <!-- Quick Mobility Highlights (Perfect for bakery managers) -->
+            <div class="header-badges">
+                <div class="badge-item positive-highlight">
+                    <svg class="badge-icon" viewBox="0 0 24 24" width="16" height="16">
+                        <path fill="currentColor" d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5s1.5.67 1.5 1.5s-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+                    </svg>
+                    <span><strong>Titulaire du BSR (Permis AM)</strong></span>
+                </div>
+                <div class="badge-item positive-highlight">
+                    <svg class="badge-icon" viewBox="0 0 24 24" width="16" height="16">
+                        <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    <span><strong>Autonome &amp; Véhiculé (Scooter)</strong></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- CV CONTENT BODY -->
+        <main class="cv-grid">
+            
+            <!-- LEFT COLUMN (Contact, Atouts, Loisirs) -->
+            <aside class="cv-sidebar">
+                <!-- Section Contact -->
+                <section class="sidebar-section">
+                    <h2 class="sidebar-title">Contact</h2>
+                    <ul class="contact-list">
+                        <li>
+                            <svg class="contact-icon" viewBox="0 0 24 24" width="18" height="18">
+                                <path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <a href="tel:0768439011">07 68 43 90 11</a>
+                        </li>
+                        <li>
+                            <svg class="contact-icon" viewBox="0 0 24 24" width="18" height="18">
+                                <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5l-8-5V6l8 5l8-5v2z"/>
+                            </svg>
+                            <a href="mailto:maatheo556@gmail.com">maatheo556@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg class="contact-icon" viewBox="0 0 24 24" width="18" height="18">
+                                <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span>Région de Verdun (55)</span>
+                        </li>
+                        <li>
+                            <svg class="contact-icon" viewBox="0 0 24 24" width="18" height="18">
+                                <path fill="currentColor" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                            </svg>
+                            <span>Disponible immédiatement</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Section Atouts (Soft Skills) -->
+                <section class="sidebar-section">
+                    <h2 class="sidebar-title">Qualités &amp; Atouts</h2>
+                    <div class="strengths-tags">
+                        <div class="strength-card">
+                            <span class="strength-emoji">⏰</span>
+                            <div>
+                                <h3>Matinal &amp; Ponctuel</h3>
+                                <p>Habitué aux rythmes de travail décalés</p>
+                            </div>
+                        </div>
+                        <div class="strength-card">
+                            <span class="strength-emoji">⚡</span>
+                            <div>
+                                <h3>Grande Adaptabilité</h3>
+                                <p>S'ajuste rapidement aux imprévus et aux équipes</p>
+                            </div>
+                        </div>
+                        <div class="strength-card">
+                            <span class="strength-emoji">😊</span>
+                            <div>
+                                <h3>Sens de l'humour</h3>
+                                <p>Favorise une excellente ambiance de travail</p>
+                            </div>
+                        </div>
+                        <div class="strength-card">
+                            <span class="strength-emoji">💪</span>
+                            <div>
+                                <h3>Endurant</h3>
+                                <p>Excellente résistance physique (station debout)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section Loisirs -->
+                <section class="sidebar-section">
+                    <h2 class="sidebar-title">Intérêts</h2>
+                    <ul class="interests-list">
+                        <li>🍳 Cuisine créative</li>
+                        <li>🛵 Sports mécaniques</li>
+                        <li>🛠️ Bricolage et travaux manuels</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <!-- RIGHT COLUMN (Profil, Expériences, Compétences, Formation) -->
+            <div class="cv-main">
+                
+                <!-- Section Profil / Accroche -->
+                <section class="main-section intro-section">
+                    <p class="lead-text">
+                        Fort d'expériences réussies en **cuisine**, **boucherie** et **service**, j'ai développé une grande capacité d'adaptation et une solide culture des métiers de bouche.
+                    </p>
+                    <p class="body-text">
+                        Dynamique, endurant et doté d'un excellent relationnel, j'apprécie apporter de la bonne humeur au sein de l'équipe et collaborer avec efficacité. Aujourd'hui passionné par l'art de la boulangerie, je souhaite mettre mon énergie au service de votre fournil. Grâce à mon **BSR et mon scooter**, je suis pleinement autonome pour assurer les horaires du matin.
+                    </p>
+                </section>
+
+                <!-- Section Expériences Professionnelles -->
+                <section class="main-section">
+                    <h2 class="section-title">
+                        <svg class="section-icon" viewBox="0 0 24 24" width="22" height="22">
+                            <path fill="currentColor" d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                        </svg>
+                        Expériences dans les Métiers de Bouche &amp; Restauration
+                    </h2>
+                    
+                    <div class="experience-timeline">
+                        <!-- Expérience Boucherie -->
+                        <div class="exp-item card-hover">
+                            <div class="exp-header">
+                                <div class="exp-job">Stage en Boucherie</div>
+                                <div class="exp-place">Le Bœuf Tricolore — Verdun</div>
+                            </div>
+                            <ul class="exp-details">
+                                <li><strong>Hygiène &amp; HACCP :</strong> Respect strict des normes sanitaires, désinfection systématique des billots, couteaux et machines.</li>
+                                <li><strong>Technicité :</strong> Maniement habile des outils de découpe, parage et préparation des viandes sous la direction de l'artisan.</li>
+                                <li><strong>Endurance physique :</strong> Travail en environnement froid (chambre froide), port de charges lourdes et station debout prolongée.</li>
+                                <li><strong>Clientèle :</strong> Accueil des clients, conseil sur la préparation des produits et vente au comptoir.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Expérience Cuisine -->
+                        <div class="exp-item card-hover">
+                            <div class="exp-header">
+                                <div class="exp-job">Stage en Cuisine (Restauration)</div>
+                                <div class="exp-place">Chez Agnès — Auzeville-en-Argonne</div>
+                            </div>
+                            <ul class="exp-details">
+                                <li><strong>Précision des dosages :</strong> Réalisation de pesées précises pour la préparation des plats et des sauces (compétence clé transposable à la boulangerie).</li>
+                                <li><strong>Organisation &amp; Vitesse :</strong> Gestion des coups de feu, envoi rapide des préparations et travail coordonné en brigade.</li>
+                                <li><strong>Nettoyage :</strong> Entretien complet de la plonge, du plan de travail et respect du plan de nettoyage de l'établissement.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Expérience Service -->
+                        <div class="exp-item card-hover">
+                            <div class="exp-header">
+                                <div class="exp-job">Stage en Service en Salle</div>
+                                <div class="exp-place">Chez Agnès — Auzeville-en-Argonne</div>
+                            </div>
+                            <ul class="exp-details">
+                                <li><strong>Sens du contact client :</strong> Accueil chaleureux, écoute active, service soigné et fidélisation.</li>
+                                <li><strong>Réactivité :</strong> Prise de commande rapide, gestion des priorités et gestion du stress pendant le rush.</li>
+                                <li><strong>Esprit d'équipe :</strong> Collaboration étroite avec la cuisine pour garantir un service fluide et rapide.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section Compétences Transférables -->
+                <section class="main-section">
+                    <h2 class="section-title">
+                        <svg class="section-icon" viewBox="0 0 24 24" width="22" height="22">
+                            <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41c0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/>
+                        </svg>
+                        Compétences Clés pour la Boulangerie
+                    </h2>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-card-visual">
+                            <div class="skill-icon-wrap">🧼</div>
+                            <h3>Sécurité Alimentaire</h3>
+                            <p>Maîtrise des normes HACCP, de la chaîne du froid et du nettoyage de fournil.</p>
+                        </div>
+                        <div class="skill-card-visual">
+                            <div class="skill-icon-wrap">⚖️</div>
+                            <h3>Précision &amp; Pesée</h3>
+                            <p>Habitude du pesage au gramme près pour respecter l'hydratation et les recettes.</p>
+                        </div>
+                        <div class="skill-card-visual">
+                            <div class="skill-icon-wrap">🔋</div>
+                            <h3>Résistance Physique</h3>
+                            <p>Habitué au travail debout, au port de charges et aux cadences de production.</p>
+                        </div>
+                        <div class="skill-card-visual">
+                            <div class="skill-icon-wrap">🥖</div>
+                            <h3>Vente &amp; Contact</h3>
+                            <p>Capacité à épauler la vente en boutique grâce à l'expérience du service client.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section Formation -->
+                <section class="main-section">
+                    <h2 class="section-title">
+                        <svg class="section-icon" viewBox="0 0 24 24" width="22" height="22">
+                            <path fill="currentColor" d="M12 3L1 9l11 6l9-4.91V17h2V9L12 3zM5.18 11.5L12 15.22l6.82-3.72L12 7.78L5.18 11.5z"/>
+                        </svg>
+                        Formation &amp; Diplômes
+                    </h2>
+                    <div class="formation-list">
+                        <div class="formation-item">
+                            <div class="form-header">
+                                <div class="form-title">Projet Alternance - CAP Boulanger</div>
+                                <div class="form-date">2026 - 2027</div>
+                            </div>
+                            <div class="form-place">CFA / École de Boulangerie - Recherche d'entreprise d'accueil</div>
+                        </div>
+                        <div class="formation-item">
+                            <div class="form-header">
+                                <div class="form-title">Année sabbatique active &amp; Projets personnels</div>
+                                <div class="form-date">2025 - 2026</div>
+                            </div>
+                            <div class="form-place">Réalisation de stages pratiques de découverte (boucherie, cuisine, service) et obtention du permis BSR</div>
+                        </div>
+                        <div class="formation-item">
+                            <div class="form-header">
+                                <div class="form-title">Classe de 3e Prépa-Métiers</div>
+                                <div class="form-date">2024 - 2025</div>
+                            </div>
+                            <div class="form-place">Découverte des milieux professionnels et des métiers de bouche, préparation de l'orientation</div>
+                        </div>
+                        <div class="formation-item">
+                            <div class="form-header">
+                                <div class="form-title">Permis AM (BSR)</div>
+                                <div class="form-date">Obtenu en 2025</div>
+                            </div>
+                            <div class="form-place">Conduite autonome de deux-roues, idéal pour assurer les horaires matinaux du fournil</div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- FOOTER SECTION (For digital view) -->
+        <footer class="cv-footer no-print">
+            <p>© 2026 Mathéo Canova-Prevot • Document généré de manière éco-responsable.</p>
+            <p>Conçu pour être lu sur écran ou imprimé idéalement en un seul feuillet A4 recto.</p>
+        </footer>
+    </div>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+</body>
+</html>
