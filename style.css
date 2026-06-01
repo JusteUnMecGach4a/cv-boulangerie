@@ -686,6 +686,17 @@ button:active {
     }
 }
 
+/* Preload and hide the QR code container on digital screens */
+.qr-code-print {
+    position: absolute !important;
+    left: -9999px !important;
+    top: -9999px !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    visibility: hidden !important;
+}
+
 /* ==========================================================================
    9. Strict PRINT Stylesheet (Fits beautifully on 1 page A4)
    ========================================================================== */
@@ -933,5 +944,14 @@ button:active {
 
     .form-place {
         font-size: 0.75rem !important;
+    }
+
+    .qr-code-print {
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+        overflow: visible !important;
+        visibility: visible !important;
+        display: block !important;
     }
 }
